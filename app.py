@@ -9,3 +9,8 @@ def read_root():
 @app.get("/about")
 def about():
     return {"msg": "about us"}
+
+@app.get("/courses")
+def courses():
+    cour=["IT","DS","CS","BBA","BMM"]
+    return {"courses":cour}
